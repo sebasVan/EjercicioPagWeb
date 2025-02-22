@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Barbería Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron">
+            <!-- siempre van label e input -->
+
+            <label for="correoelectronico">Correo electronico</label>
+            <input type="text" id="correoelectronico" class="input-padron">
+
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" class="input-padron">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
+
+            <div>
+                <p>Cómo le gustaría que lo contactemos ?</p>
+
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email">Email</label>
+                <!-- metiendo el input dentro del label permite que el texto quede despues del radio -->
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Telefono</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"
+                        id="radio-whatsapp">Whatsapp</label>
+                <!-- con lo del name le dice que los tres pertenecen a contacto para que de la opcion de solo seleccionar uno -->
+
+            </div>
+            <div>
+                <p>En cual horario prefiere ser atendido?</p>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+
+                </select>
+                <!-- este select crea una lista desplegable -->
+            
+            </div>
+
+            <label class="checkbox"><input type="checkbox"> Le gustaria recibir novedades de nuestra barberia Alura
+                ?</label>
+
+            <input type="submit" value="Enviar formulario">
+
+        </form>
+    </main>
+
+
+    <footer>
+        <img src="imagenes/logo-blanco.png">
+        <p class="copyright">&copy Copyright Barbería Alura - 2020</p>
+    </footer>
+</body>
+
+</html>
